@@ -1,0 +1,68 @@
+html, body {
+    font-family: sans-serif;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+}
+
+.container {
+    width: 500px;
+    margin: 50px auto 0;
+}
+
+.boxes {
+    height: 500px;
+    width: 500px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.box {
+    text-align: center;
+    line-height: 1;
+    font-size: 100px;
+
+    position: relative;
+
+    border: 1px solid rgba(0,0,0,.15);
+
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+}
+
+.box span{
+    font-family: cursive;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.player-turn-container {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+
+.player-turn {
+    color: red;
+}
+
+.box:hover {
+    background: lightskyblue;
+}
+
+.box:not(:empty):hover{
+    background: lightsalmon;
+}
+
+button.reset {
+    margin-top: 15px;   
+}
